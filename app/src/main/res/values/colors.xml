@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff7701</color>
+    <color name="colorPrimaryDark">#ff7701</color>
+    <color name="colorAccent">#333333</color>
+
+    <color name="black">#000000</color>
+    <color name="light_black">#333333</color>
+    <color name="orange">#ff7701</color>
+    <color name="dark_gray">#626262</color>
+    <color name="light_gray">#828282</color>
+    <color name="white">#fff</color>
+    <color name="dark_gray_for_date">#676464</color>
+    <color name="transparent">#80000000</color>
+    <color name="Background_color">#ff7701</color>
+    <color name="shadow_view">#385c6e</color>
+    <color name="screen_background">#eaf1f7</color>
+
+
+    <color name="blue_color">#26A7E0</color>
+    <color name="darkblue_color">#3251a2</color>
+    <color name="font_color">#998888</color>
+    <color name="upto54">#626262</color>
+    <color name="line_color">#cccccc</color>
+    <color name="transparent_bg">#00000000</color>
+
+
+</resources>

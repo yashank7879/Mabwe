@@ -1,0 +1,270 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mabwe.com.mabwe.fragments.ProfileFragment">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="userData"
+            type="mabwe.com.mabwe.modals.UserInfo" />
+    </data>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/topview"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_18sdp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/profile_Name_Tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@null"
+                            android:fontFamily="@font/muli_light"
+                            android:hint="@string/enter_name"
+                            android:imeOptions="actionNext"
+                            android:maxLines="1"
+                            android:nextFocusForward="@+id/profile_Post_Tv"
+                            android:singleLine="true"
+                            android:text="@{userData.fullName}"
+                            android:textColor="@color/light_black"
+                            android:textSize="@dimen/extra_large_text" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/mail" />
+
+                            <EditText
+                                android:id="@+id/profile_Email_Tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/muli_light"
+                                android:hint="@string/email"
+                                android:imeOptions="actionNext"
+                                android:text="@{userData.email}"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/medium_text" />
+
+                        </LinearLayout>
+
+                        <!--  android:visibility='@{userData.gvfhg == "" ? View.GONE : View.VISIBLE}'
+  -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/line_color" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/flag" />
+
+                            <Spinner
+                                android:id="@+id/profile_Country_Tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/muli_light"
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/medium_text" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_1sdp"
+                            android:background="@color/line_color" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_40sdp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="@dimen/_22sdp"
+                                android:layout_height="@dimen/_22sdp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/briefcase" />
+
+                            <EditText
+                                android:id="@+id/profile_Post_Tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@null"
+                                android:fontFamily="@font/muli_light"
+                                android:hint="Profession"
+                                android:imeOptions="actionNext"
+                                android:maxLines="1"
+                                android:singleLine="true"
+                                android:text='@{userData.profession == null ? "" : userData.profession }'
+                                android:textColor="@color/light_black"
+                                android:textSize="@dimen/medium_text" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/topview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:background="@drawable/profile_bg_img">
+
+                <LinearLayout
+                    android:id="@+id/profile_tb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_gratitude"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/muli_regular"
+                        android:gravity="center"
+                        android:text="Profile"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/large_text" />
+
+                        <android.support.v7.widget.AppCompatImageView
+                            android:id="@+id/img_setting"
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/_10sdp"
+                            app:srcCompat="@drawable/ic_profile_settings_ic" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <com.github.captain_miao.optroundcardview.OptRoundCardView
+                            android:id="@+id/contentView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_25sdp"
+                            android:elevation="@dimen/_4sdp"
+                            app:optRoundCardBottomEdges="false"
+                            app:optRoundCardCornerRadius="4dp"
+                            app:optRoundCardElevation="@dimen/_4sdp"
+                            app:optRoundCardLeftBottomCorner="false"
+                            app:optRoundCardRightBottomCorner="false">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_2sdp"
+                                android:background="@color/white"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/profile_Image_Iv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/_150sdp"
+                                    android:layout_gravity="center"
+                                    android:scaleType="centerCrop"
+                                    android:layout_marginBottom="@dimen/_20sdp"
+                                    android:layout_marginLeft="@dimen/_22sdp"
+                                    android:layout_marginRight="@dimen/_22sdp"
+                                    android:layout_marginTop="@dimen/_15sdp"
+                                    android:src="@drawable/placeholder_img" />
+                                <!--android:src="@{userData.profileImage == null ? @drawable/myplaceholder : userData.profileImage }"-->
+                            </LinearLayout>
+
+                        </com.github.captain_miao.optroundcardview.OptRoundCardView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/profile_edit_btn"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_270sdp"
+                android:elevation="@dimen/_10sdp"
+                android:src="@drawable/edit_icon" />
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:minHeight="50dp"
+            android:minWidth="50dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</layout>

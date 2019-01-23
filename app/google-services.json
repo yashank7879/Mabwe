@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "550382517245",
+    "firebase_url": "https://mabwe-52246.firebaseio.com",
+    "project_id": "mabwe-52246",
+    "storage_bucket": "mabwe-52246.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:550382517245:android:1452b2d89ce9368c",
+        "android_client_info": {
+          "package_name": "mabwe.com.mabwe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "550382517245-9jir2gfpuq7jf5ecppla7q02ujdcq8fb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mabwe.com.mabwe",
+            "certificate_hash": "b9fe0c5f31646e8afa050872cea4df90aa8b568b"
+          }
+        },
+        {
+          "client_id": "550382517245-98h2cd9h474p38hllji7h855g8do7inc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKZDf9JQPXfJnwbTcQtwbGvpwtodH6Pkg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "550382517245-98h2cd9h474p38hllji7h855g8do7inc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

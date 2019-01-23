@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context="mabwe.com.mabwe.activity.InternateConActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_51sdp"
+        android:layout_marginBottom="0.2dp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
+
+            <TextView
+                android:id="@+id/tv_gratitude"
+                android:layout_width="@dimen/_140sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_centerInParent="true"
+                android:layout_margin="@dimen/_1sdp"
+                android:gravity="center"
+                android:fontFamily="@font/muli_regular"
+                android:text="@string/alert"
+                android:textColor="@color/white"
+                android:textSize="@dimen/large_text" />
+
+
+            <ImageView
+                android:id="@+id/network_back"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:src="@drawable/back"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/upper_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:src="@drawable/ic_antenna"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/muli_semibold"
+            android:gravity="center"
+            android:text="@string/no_internate_connection"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/extra_large_text" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/muli_regular"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:text="@string/no_internate_connection_found_n_please_check_your_internate_connection_n_and_try_again"
+            android:textColor="@color/dark_gray_for_date"
+            android:textSize="@dimen/small_text" />
+
+
+        <TextView
+            android:id="@+id/network_try_again"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_margin="@dimen/_30sdp"
+            android:background="@drawable/simple_background"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:fontFamily="@font/muli_regular"
+            android:textSize="@dimen/large_text"
+            android:text="@string/try_again"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mabwe.com.mabwe.activity.MainActivity">
+
+
+    <include layout="@layout/content_main" />
+
+    <ImageView
+        android:id="@+id/float_addpost"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/_50sdp"
+        android:layout_marginEnd="@dimen/_19sdp"
+        android:layout_marginRight="@dimen/_19sdp"
+        android:background="@drawable/circle_without_border_bg"
+        android:padding="@dimen/_4sdp"
+        app:srcCompat="@drawable/add_newic"
+        android:visibility="visible" />
+
+
+</RelativeLayout>

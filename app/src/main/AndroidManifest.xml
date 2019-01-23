@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="mabwe.com.mabwe">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".Application.Mabwe"
+        android:allowBackup="false"
+        android:icon="@drawable/mabwe"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mabwe"
+        android:supportsRtl="true"
+        android:theme="@style/splash_theam">
+        <activity
+            android:name=".splashScreen.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.VideoClipActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam" />
+        <activity
+            android:name=".activity.RegisterationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyCustomTheme"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <provider
+            android:name=".ImagePickerPackge.MyFileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"
+                android:screenOrientation="portrait" />
+        </provider>
+
+        <activity
+            android:name=".activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="mabwe.com.cropper.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App_Theam" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="ChatActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.AddPosttActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_add_postt"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam" />
+        <activity
+            android:name="mabwe.com.VideoTrim.videoActivity.TrimmerActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam" />
+        <!-- // by rahul -->
+        <activity
+            android:name=".activity.Activity_profile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Activity_profileNotification"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="Activity_profileNotification" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Activity_PendingConnections"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!--
+            <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBh4zCFYgg4l-3prBd_h-qfv8bKZO3-F6g" />
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCDChKZ6MWiFwyAcDYh67HJHoTL47gs14U" />
+
+        <activity android:name=".activity.ServerNotWrkActivity" />
+        <activity android:name=".activity.InternateConActivity" />
+        <activity
+            android:name=".activity.DetailsActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="DetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.GroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.MembersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden">
+            <intent-filter>
+                <action android:name="ShowGroupDetailsActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="2f9960a310a4fd1953cfd27c9efcd0aea2334e85" />
+
+        <activity
+            android:name=".activity.ShowGroupDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.VideoViewActivtiy"
+            android:configChanges="screenSize|orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <!-- Firebase Notifications -->
+        <service android:name=".fcmServices.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".fcmServices.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/mabwe" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorPrimary" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".activity.UpdateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name=".activity.WebviewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam" />
+        <activity
+            android:name=".activity.EditPostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam" />
+        <activity
+            android:name=".activity.AboutMabweActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/splash_theam" />
+        <activity android:name=".activity.ReportActivity"></activity>
+    </application>
+
+</manifest>

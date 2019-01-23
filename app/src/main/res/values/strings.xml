@@ -1,0 +1,225 @@
+<resources>
+    <string name="app_name">Mabwe</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="forgot_password_tv">Forgot password?</string>
+    <string name="donthave_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">SignUp</string>
+    <string name="login">Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_id">Email</string>
+    <string name="signup">Signup</string>
+    <string name="already_have_an_account">Already have an account ?</string>
+
+
+    <string name="india">INDIA</string>
+    <string name="phone_no_valid">Mobile not validate</string>
+
+    <string name="pick_image_intent_chooser_title">Select source</string>
+    <string name="result_image_desc">crop result</string>
+    <string name="pick_image_intent_text">Choose an image</string>
+    <string name="enter_valid_name">Please enter Valid Name</string>
+    <string name="enter_valid_email">Please enter Valid Email</string>
+    <string name="enter_valid_password">Please enter Valid Password</string>
+    <string name="permission_denied">YOU DENIED PERMISSION CANNOT SELECT IMAGE</string>
+    <string name="your_permission_denied">YOUR PERMISSION DENIED</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_mail">Email</string>
+
+
+    <!--Validation String-->
+    <string name="email_null">Please enter email</string>
+    <string name="email_v">Please enter valid email</string>
+    <string name="password_null">Please enter password</string>
+    <string name="password_v">Please enter valid password</string>
+    <string name="fullname_v">Please enter name</string>
+    <string name="fullname_null">Please enter valid name</string>
+    <string name="fullname_required">Name must contain 3 characters</string>
+    <string name="valid_email">Please enter valid email address</string>
+    <string name="password_required">Password must contain 6 characters</string>
+    <string name="for_exit">Please click BACK again to exit</string>
+    <string name="select_image">Please Select your profile Image</string>
+    <string name="insert_contect_no">Please insert mobile</string>
+    <string name="inter_no">Please insert mobile</string>
+    <string name="inter_valid_no">Please insert valid mobile</string>
+    <string name="inter_seven_digit_no">Please insert atleast 7 digit</string>
+    <string name="inter_sixteen_digit_no">Please insert less then 16 digit</string>
+
+
+    // Cropper
+    <!--Picker text-->
+    <string name="crop_image_activity_title">Crop Image</string>
+    <string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_crop">Crop</string>
+    <string name="please_enter_your_registered_email_address_below_to_reset_your_password">Please enter your registered email address below to reset your password.</string>
+    <string name="forgot_your_password">Forgot Your Password?</string>
+    <string name="title_activity_main">MainActivity</string>
+
+
+    // Titles
+    <string name="all_records">Newsfeed</string>
+    <string name="select_post_category">Select post category</string>
+    <string name="add_media">Add photo/video</string>
+    <string name="upto_5">(Upto 5)</string>
+    <string name="post_title">Post title</string>
+    <string name="add_location">Add Location</string>
+    <string name="add_tag">Add Tag</string>
+    <string name="add">Add</string>
+    <string name="description">Description</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="press_back_again">press back again</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="reviews">Reviews</string>
+    <string name="are_you_willing_to_ship">Are you willing to ship ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="are_you_legally_authorized_to_work_in_this_country">Are you legally authorized to work in this country ?</string>
+    <string name="are_you_willing_to_relocate">Are you willing to relocate ?</string>
+    <string name="title_activity_add_postt">AddPosttActivity</string>
+    <string name="add_post">Add Post</string>
+    <string name="insert_valid_data">Insert valid data</string>
+
+
+    <string name="insert_post">Please enter Post Title</string>
+    <string name="insert_Location">Please enter Location</string>
+    <string name="insert_description">Please enter Description</string>
+    <string name="include_hastags">Include hastags</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="connect">Connect</string>
+    <string name="mabwe411">Mabwe411</string>
+    <string name="marketpalace_africa">Marketpalace Africa</string>
+    <string name="apply">Apply</string>
+    <string name="clear">Clear</string>
+    <string name="select_category">Please Select Category</string>
+    <string name="alert">Alert</string>
+    <string name="server_not_working">Server Not Working</string>
+    <string name="no_internate_connection">No Internate Connection</string>
+    <string name="no_server_connection_found_n_please_check_your_server_connection_n_and_try_again">No Server Connection found.  Please check your server connection   and try again.</string>
+    <string name="no_internate_connection_found_n_please_check_your_internate_connection_n_and_try_again">No internate connection found.   please check your internate connection   and try again.</string>
+
+
+    //Images
+    <string name="image_selection_limite_msg">Maximum number of images selected</string>
+    <string name="detail">Detail</string>
+    <string name="career">Career</string>
+    <string name="please_select_one_image">Please Select Atleast one image</string>
+    <string name="please_enter_tags">Please Select tags</string>
+    <string name="mediaorlocation">Please Select Media or Location</string>
+
+    //Times
+    <string name="year_ago">year ago</string>
+    <string name="years_ago">years ago</string>
+    <string name="month_ago">month ago</string>
+    <string name="months_ago">months ago</string>
+    <string name="week_ago">week ago</string>
+    <string name="weeks_ago">weeks ago</string>
+    <string name="day_ago">day ago</string>
+    <string name="days_ago">days ago</string>
+    <string name="hour_ago">hour ago</string>
+    <string name="hours_ago">hours ago</string>
+    <string name="minute_ago">minute ago</string>
+    <string name="minutes_ago">minutes ago</string>
+    <string name="second_ago">second ago</string>
+    <string name="seconds_ago">seconds ago</string>
+
+
+    //Profile Validate
+    <string name="select_country">Please Select Country</string>
+    <string name="profession">Please Select Profession</string>
+
+
+    //Setting change password
+    <string name="valid_password">password is wrong.</string>
+    <string name="new_password">Please insert your new password</string>
+    <string name="new_passw_valid">password should be not less then 6 or greater then 16</string>
+
+    <string name="old_pass">Please enter your old password</string>
+    <string name="passwrod_not_match">Old password not matched</string>
+    <string name="new_pass">Please enter your new password</string>
+    <string name="c_pass">Please enter your confirm password</string>
+    <string name="cant_same">Old and new password can\'t be same</string>
+    <string name="cant_same_pass">New and confirm password not matched</string>
+    <string name="_54_word_limit">500 word limit</string>
+    <string name="contact_information">Contact Information</string>
+    <string name="no_comment_found">No Comment Found</string>
+    <string name="write_comments">Write Comments</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="posted_by">Posted By</string>
+    <string name="comments">Comments</string>
+    <string name="likes">Likes</string>
+    <string name="title">Title</string>
+    <string name="create">Create</string>
+    <string name="select_group_category">Select group category</string>
+    <string name="create_group">Create Group</string>
+    <string name="try_again">Try again</string>
+    <string name="no_data_found">No data Found</string>
+    <string name="no_server_connection">No Server Connection found.  Please check your server connection   and try again.</string>
+    <string name="notifications">Notifications</string>
+    <string name="change_password">Change Password</string>
+    <string name="about_us">About Mabwe</string>
+    <string name="support">Support</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy">Privacy and Policy</string>
+    <string name="help_and_support">Help and Support</string>
+    <string name="logout">Logout</string>
+    <string name="update_group">Update group</string>
+    <string name="btn_update">Update </string>
+
+    <!--<VideoClipActivity>-->
+    <string name="btn_continue">continue</string>
+    <string name="ok">OK</string>
+    <string name="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="my54">#My54</string>
+    <string name="permission_read_storage_rationale">Storage read permission is needed to pick files.</string>
+    <string name="label_select_video">Select Video</string>
+    <string name="cancel">Cancel</string>
+    <string name="permission_title_rationale">Permission needed</string>
+    <string name="toast_cannot_retrieve_selected_video">Cannot retrieve selected video</string>
+    <string name="trimming_progress">Trimming your video...</string>
+    <string name="megabyte">MB</string>
+    <string name="kilobyte">KB</string>
+    <string name="short_seconds">sec</string>
+    <string name="save">Save</string>
+
+    <!--Video View Activity-->
+    <string name="video_not_available">Video not available.</string>
+    <string name="video_not_supported">Video file not supported..</string>
+
+    <!--AddPostActivity-->
+    <string name="same_tagnot_allowed">Same Tags not allowed</string>
+    <string name="enter_tag_name">Please enter tag name</string>
+    <string name="lessthen_20mb">Please take less than 20Mb file</string>
+    <string name="lessthen_53sec">Video should not be grater than 53sec.</string>
+    <string name="not_fatch_location">Not able to fetch loaction</string>
+    <string name="select_video_image_at_a_time"> Please select Image or Video at a time.</string>
+
+    <!--Network Util-->
+    <string name="too_slow">Internet connection too slow</string>
+    <string name="no_internet_access">Internet access not available, Please try again later</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="connection_tille">Connect</string>
+
+    <string name="sold">Sold</string>
+    <string name="available">Available</string>
+
+    <string name="hired">Hired</string>
+    <string name="still_searching">Still Searching</string>
+    <string name="still_seraching_yes">Still Searching - Yes</string>
+    <string name="hired_yes">Hired - Yes</string>
+    <string name="available_yes">Available - Yes</string>
+    <string name="sold_yes">Sold - Yes</string>Comments
+    <string name="update">Update</string>
+    <string name="update_post">Update Post</string>
+    <string name="email">Email</string>
+    <string name="this_post_does_not_exist_any_more">This post does not exist any more.</string>
+    <string name="group_does_not_exist">Group does not exist…</string>
+
+
+</resources>
